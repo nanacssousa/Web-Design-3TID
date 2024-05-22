@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Sedan+SC&display=swap');
+@import url(reset.css);
+
+*{
+    margin: 0;
+    padding: 0;  
+ }
+
+
+body {
+    margin: auto;
+    overflow: auto;
+    box-sizing: border-box;
+    font-family: Sedan SC;
+}
+
+section{
+    padding:1rem 9%;
+}
+
+.heading{
+    text-align: center;
+    font-size: 4rem;
+    color: #333;
+    padding: 1rem;
+    margin: 1rem 0;
+    margin-left: 10%;
+    margin-bottom: 4%;
+    background: rgba(225, 51, 153, .05);
+    background: linear-gradient(315deg, rgb(164, 136, 186) 3%, rgb(124, 78, 138) 38%, rgb(86, 58, 104) 68%, rgb(66, 43, 80) 98%);
+    animation: gradient 7s ease infinite;
+    background-size: 400% 400%;
+    background-attachment: fixed;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+.heading span{
+    color: #ffffff;
+}
+
+.contact .row{
+    display: flex ;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.contact .row form{
+    flex: 1 15 20rem;
+    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+    border: .1rem solid rgba(0,0,0,.1);
+    background: #fff;
+    border-radius: .5rem;
+    padding-bottom: 2%;
+    padding-top: 2%;
+}
+
+.contact .row form .box{
+    padding: 1rem;
+    font-size: 1.7rem;
+    color: #333;
+    text-transform: none;
+    border: .1rem solid rgb(86, 58, 104);
+    border-radius: .5rem;
+    margin: .7rem 0;
+    margin-left: 6%;
+    width: 80%;
+}
+
+.contact .row form .box:hover{
+    padding: 1rem;
+    font-size: 1.7rem;
+    color: #333;
+    text-transform: none;
+    border: .1rem solid rgb(86, 58, 104);
+    border-radius: .5rem;
+    margin: .7rem 0;
+    margin-left: 6%;
+    width: 80%;
+    background-color: rgb(199, 177, 213);
+    transition: .4s;
+}
+
+::placeholder{
+    color:rgb(134, 96, 158)
+}
+
+.contact .row form .btn{
+    border-radius: 5px;
+    background-color: rgb(86, 58, 104);
+    color: #ffffff;
+    width: 80%;
+    padding: 0.62rem;
+    margin-left: 8.5%;
+    cursor: pointer;
+}
+
+.contact .row form .btn:hover{
+    border-radius: 5px;
+    background-color: rgb(164, 136, 186);
+    color: black;
+    width: 80%;
+    padding: 0.62rem;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.contact .row .image{
+    flex:1 1 0rem;
+    
+}
+
+.contact .row .image img{
+    width: 130%;
+    height: 100%;
+}
+
+.contact .row from .box:focus{
+    border-color: var(--pink);
+}
+
+.contact .row form textarea{
+    height: 15rem;
+    resize: none;
+}
+
+@media only screen and (max-width: 990px){
+
+.contact .row form{
+    flex: 1 15 20rem;
+    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+    border: .1rem solid rgba(0,0,0,.1);
+    background: #fff;
+    border-radius: .5rem;
+    padding-bottom: 2%;
+    padding-top: 2%;
+    margin-left: 25%;
+}
+    
+.contact .row .image img{
+    display: none;
+}
+
+}
+
+@media only screen and (max-width: 600px){
+    
+.contact .row form{
+    flex: 1 15 20rem;
+    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+    border: .1rem solid rgba(0,0,0,.1);
+    background: #fff;
+    border-radius: .5rem;
+    padding-bottom: 2%;
+    padding-top: 2%;
+    margin-left: 12.5%;
+}
+
+.contact .row .image img{
+    display: none;
+}
+}
