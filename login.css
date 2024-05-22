@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Sedan+SC&display=swap');
+@import url(reset.css);
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ body {
+    margin: auto;
+    overflow: auto;
+    background: linear-gradient(315deg, rgb(247, 247, 247) 3%, rgb(253, 251, 243) 38%, rgb(126, 73, 123) 68%, rgb(89, 40, 90) 98%);
+    animation: gradient 15s ease infinite;
+    background-size: 400% 400%;
+    background-attachment: fixed;
+    box-sizing: border-box;
+    font-family: Sedan SC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+.container {
+    width: 80%;
+    height: 80vh;
+    display: flex;
+    
+}
+
+.form-image {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.form-image img {
+    width: 31rem;
+}
+
+.form {
+    border: 3px solid #67096e;
+    width: 100%;
+    margin-left: -2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 3rem;
+    box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.212);
+}
+
+.form-header {
+    margin-bottom: 3rem;
+    margin-top: 20%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-header h1::after {
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 0.3rem;
+    background-color: #67096e;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.input-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.1rem;
+    margin-left: 18%;
+}
+
+.input-box input {
+    margin: 0.6rem 0;
+    padding: 0.8rem 9.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001c;
+    font-size: 0.8rem;
+}
+
+.input-box input:hover {
+    background-color: rgb(210, 171, 212);
+}
+
+.input-box input:focus-visible {
+    outline: 1px solid #cb0cd9;
+}
+
+.input-box label,
+.gender-title h6 {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #000000c0;
+}
+
+.input-box input::placeholder {
+    color: #000000be;
+}
+
+.login-button {
+    display: flex;
+    align-items: center;
+    margin-top: 3%;
+    margin-bottom: 20%;
+    margin-left: 39%;
+}
+
+a:hover {
+    -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+    filter: drop-shadow(10px 7px 5px rgb(157, 2, 149));
+    transition: .3s;
+}
+
+a {
+    font-weight: 500;
+    color: #67096e;
+}
+
+.continue-button button {
+    width: 15%;
+    margin-left: 43%;
+    border: none;
+    background-color: #67096e;
+    padding: 0.62rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.continue-button button:hover {
+    background-color: #cb0cd9;
+    -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+    filter: drop-shadow(10px 7px 5px rgb(157, 2, 149));
+    transition: .3s;
+}
+
+.continue-button button a {
+    text-decoration: none;
+    font-size: 0.93rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+@media only screen and (max-width: 900px){
+
+    .form{
+        padding: 3rem;
+        height: 20%;
+    }
+
+    .form-image {
+        display: none;
+    }
+
+    .container {
+        width: 80%;
+        height: 70%;
+        margin-bottom: 5%;
+    }
+
+    .input-group {
+        flex-direction: column;
+        z-index: 5;
+        padding-right: 5rem;
+        max-height: 10rem;
+        overflow-y: scroll;
+        flex-wrap: nowrap;
+    }
+
+    .login-button {
+        display: flex;
+        align-items: center;
+        margin-top: 10%;
+        margin-left: 34%;
+    }
+
+    .login-button button {
+        width: 200%;
+    }
+
+    .continue-button button {
+        width: 100%;
+        margin-top: -70%;
+        margin-left: 0%;
+        border: none;
+        background-color: #67096e;
+        padding: 0.62rem;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+}
+
+@media only screen and (max-width: 900px){
+
+    .form{
+        padding: 7rem;
+        height: 90%;
+        margin-top: 5%;
+    }
+    .container {
+        width: 94%;
+        height: 90%;
+        margin-bottom: 5%;
+        margin-left: 5%;
+    }
+}
+
+
+
