@@ -1,11 +1,136 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aula 1</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="..//css/reset.css">
+     <!-- fonte incrivel cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Joias Razay</title>
 </head>
 <body>
-   Minha primeira página HTML no GitHub 
+    
+<!-- começar header -->
+<header>
+<nav>
+
+    <div class="nav-bar">
+        <div class="logo">
+            <img src="../img/logo.png">
+        </div>
+
+        <ul class="nav-list">
+            <li class="nav-item"><a href="../html/index.html" class="navbar">Home</a></li>
+            <li class="nav-item"><a href="#" class="navbar">Sobre nós</a></li>
+            <li class="nav-item"><a href="#" class="navbar">Produtos</a></li>
+            <li class="nav-item"><a href="#" class="navbar">Fale conosco</a></li> 
+        </ul>
+    
+
+        <div class="icons">
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <a href="#" class="fas fa-user"></a>
+        </div>
+        
+    </div>
+</nav>
+</header>
+
+<!-- começar sidebar -->
+<nav id="sidebar">
+    <div id="sidebar_content">
+        <div id="user">
+            <img src="../img/logo.png" id="user_avatar" alt="Avatar">
+
+            <p id="user_infos">
+                <span class="item-description">
+                    Joias Razay
+                </span>
+                <span class="item-description">
+                    Menu de navegação
+                </span>
+            </p>
+        </div>
+
+        <ul id="side_items">
+            <li class="side-item active">
+                <a href="#">
+                    <i class="fa-solid fa-house"></i>
+                    <span class="item-description">
+                        Home
+                    </span>
+                </a>
+            </li>
+
+            <li class="side-item">
+                <a href="#">
+                    <i class="fas fa-heart"></i>
+                    <span class="item-description">
+                        Gostei
+                    </span>
+                </a>
+            </li>
+
+            <li class="side-item">
+                <a href="#">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="item-description">
+                        Carrinho
+                    </span>
+                </a>
+            </li>
+
+            <li class="side-item">
+                <a href="#">
+                    <i class="fas fa-user"></i>
+                    <span class="item-description">
+                        Login
+                    </span>
+                </a>
+            </li>
+
+            <li class="side-item">
+                <a href="#">
+                    
+                    <span class="item-description">
+                        Sobre nós
+                    </span>
+                </a>
+            </li>
+
+            <li class="side-item">
+                <a href="#">
+                   
+                    <span class="item-description">
+                        Produtos
+                    </span>
+                </a>
+            </li>
+        </ul>
+
+        <button id="open_btn">
+            <i id="open_btn_icon" class="fa-solid fa-chevron-right"></i>
+        </button>
+    </div>
+
+    <div id="logout">
+        <button id="logout_btn">
+            <i class="fa-solid fa-address-book"></i>
+            <span class="item-description">
+                Fale conosco
+            </span>
+        </button>
+    </div>
+</nav>
+
+<main>
+    <h1>Menu</h1>
+</main>
+<script src="../js/script.js"></script>
+
+<!-- terminar sidebar -->
+
 </body>
 </html>
